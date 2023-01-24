@@ -1,0 +1,409 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+@import './mixin+font.scss';
+body{
+    font-family: montserratBolt;
+}
+.head{
+    width: 1440px;
+    height: 700px;
+    background-image: url(../img/1440/Bitmap.png);
+    background-color: rgb(110, 109, 109);
+    background-size: cover;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+
+    &_link{
+        height: 36px;
+        width: 153px;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        margin-top: 20px;
+        position: relative;
+        left: 355px;
+
+        a{
+            text-decoration: none;
+            font-family: montserratRegular;
+            font-size: 14px;
+            color: white;
+
+        }
+        &__one{
+         height: 36px;
+         width: 45px;
+         display: flex;
+         flex-flow: row nowrap;
+         align-items: center;
+        }
+        &__two{
+            height: 36px;
+            width: 88px;
+            border: solid 2px rgb(255, 255, 255);
+            border-radius: 20px;
+            display: flex;
+            flex-flow: row nowrap;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+    &__title{
+        color: white;
+        position: relative;
+        top: 45px;
+        right: 365px;
+        font-size: 20px;
+    }
+    &_content{
+        width: 470px;
+        height: 252px;
+        margin-top: 145px;
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+        justify-content: space-between;
+        
+        &__one{
+            color: white;
+            font-size: 52px;
+            text-align: center;
+        }
+        &__two{
+            font-family: robotoLight;
+            color: white;
+            font-size: 24px;
+            text-align: center;
+            line-height: 24.5px;
+            width: 396px;
+            height: 25px;
+        }
+        &__link{
+            color: white;
+            height: 40px;
+            width: 225px;
+            background-color: rgb(210, 67, 67);
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            a{
+                text-decoration: none;
+                font-size: 14px;
+                color: white;
+    
+            }
+        }
+    }
+}
+.works_title{
+    font-size: 26px;
+    color: black;
+    text-align: center;
+    height: 33px;
+    line-height: 33px;
+    width: 342px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 35px;
+}
+.works{
+    width: 940px;
+    height: 400px;
+    margin-top: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+
+    &_one{
+        @include worksStep_three(url(../img/1440/Object\ \(3\).png));
+        &__step{
+            width: 70px;
+            height: 20px;
+            font-family: montserratRegular;
+            font-size: 10px;
+            color: white;
+            letter-spacing: 2px;
+            background-color: rgb(210, 67, 67);
+            border-radius: 10px;
+            text-align: center;
+            line-height: 20px;
+            margin: 225px 0 0 24px;
+        }
+        &__title{
+            font-size: 24px;
+            color: white;
+            line-height: 14px;
+            width: 250px;
+            height: 58px;
+            margin: 25px 0 0 24px;
+        }
+        &__text{
+            font-family: robotoLight;
+            color: rgb(240, 235, 235);
+            font-size: 14px;
+            line-height: 14px;
+            height: 57px;
+            width: 250px;
+            margin: 8px 0 0 24px;
+        }
+    }
+    &_two{
+        @include worksStep_three(url(../img/1440/Object\ \(4\).png));
+    }
+    &_three{
+        @include worksStep_three(url(../img/1440/Object\ \(5\).png));
+    }
+
+}
+.partners-title{
+    font-size: 26px;
+    width: 492px;
+    height: 34px;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 15px;
+    line-height: 95px;
+}
+.partners{
+    height: 340px;
+    width: 991px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+
+    &-one{
+        @include partners-two;
+
+        &__photo{
+            width: 120px;
+            height: 120px;
+        }
+        &__name{
+            width: 236px;
+            height: 18px;
+            font-size: 14px;
+            text-align: center
+        }
+        &__text{
+            width: 236px;
+            height: 38px;
+            font-family: robotoLight;
+            font-size: 14px;
+            line-height: 14px;
+            text-align: center;
+            color: rgb(94, 94, 94);
+        }
+    }
+    &-two{
+        @include partners-two;
+
+    }
+    &-three{
+        @include partners-two;
+
+    }
+    &-four{
+        @include partners-two;
+
+    }
+    &__link{
+        width: 180px;
+        height: 37px;
+        border: solid 2px rgb(210, 67, 67);
+        border-radius: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        a{
+            text-decoration: none;
+            font-size: 14px;
+            color: rgb(210, 67, 67);
+        }
+
+    }
+
+}
+.discoverTitle{
+    width: 748px;
+    height: 54px;
+    font-size: 26px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin-top: 34px;
+}
+.discover{
+    height: 977px;
+    width: 940px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+
+    &__one{
+        @include discover;
+        width: 300px;
+        height: 310px;
+        background-image: url(../img/1440/Bitmap\ \(1\).png);
+    }
+    &__two{
+        @include discover;
+        width: 300px;
+        height: 310px;
+        background-image: url(../img/1440/Bitmap\ \(2\).png);
+    }
+    &__three{
+        @include discover;
+        width: 300px;
+        height: 310px;
+        background-image: url(../img/1440/Object\ \(6\).png);
+    }
+    &__four{
+        @include discover;
+        width: 300px;
+        height: 310px;
+        background-image: url(../img/1440/Bitmap\ \(3\).png);
+    }
+    &__five{
+        @include discover;
+        width: 620px;
+        height: 310px;
+        background-image: url(../img/1440/Bitmap\ \(4\).png);
+    }
+    &__six{
+        @include discover;
+        width: 620px;
+        height: 310px;
+        background-image: url(../img/1440/Bitmap\ \(5\).png);
+    }
+    &__seven{
+        @include discover;
+        width: 300px;
+        height: 310px;
+        background-image: url(../img/1440/Bitmap\ \(6\).png);
+    }
+}
+.hi{
+    width: 320px;
+    height: 24px;
+    font-family: robotoLight;
+    font-size: 18px;
+    text-align: center;
+    color: rgb(116, 114, 114);
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25px;
+}
+.data{
+    width: 482px;
+    height: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+
+    &__inp{
+        width: 299px;
+        height: 40px;
+        border: solid 1px darkgray;
+        color: rgb(67, 66, 66);
+        box-shadow: 0 0 1px rgb(0, 0, 4);
+    }
+    &__button{
+        width: 173px;
+        height: 40px;
+        background-color: rgb(210, 67, 67);
+        border: none;
+        border-radius: 20px;
+        font-size: 14px;
+        color: white;
+    }
+}
+.fot{
+    margin-top: 39px;
+    border-top: solid 2px rgb(210, 67, 67);
+    width: 1440px;
+    height: 244px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: baseline;
+    justify-content: space-around;
+
+    &-dream{
+        width: 119px;
+        height: 20px;
+        color: rgb(199, 29, 29);
+        font-family: montserratRegular;
+        font-size: 16px;
+        margin-top: 40px;
+    }
+    &-company{
+        width: 280px;
+        height: 65px;
+        margin-top: 40px;
+
+        &__title{
+            width: 280px;
+            height: 17px;
+            text-align: center;
+            font-size: 14px;
+
+        }
+        &__ulli{
+            width: 280px;
+            height: 52px;
+            margin-top: 5px;
+
+        
+            ul{
+                display: flex;
+                flex-flow: column nowrap;
+                align-items: center;
+                justify-content: center;
+                
+                li{
+                
+                list-style: none;
+                margin-left: 15px;
+                
+                
+
+                    a{
+                        text-decoration: none;
+                        font-family: robotoLight;
+                        font-size: 14px;
+                        line-height: 26px;
+                        color: rgb(104, 104, 104);
+                    }
+                }
+            
+            }
+        }
+    }
+    &-partners{
+        font-size: 14px;
+    }
+    &-logo{
+        font-size: 10px;
+        color: rgb(59, 16, 16);
+        display: flex;
+        flex-flow: column nowrap;
+        text-align: center;
+    }
+}
