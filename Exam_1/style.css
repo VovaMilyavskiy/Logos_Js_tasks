@@ -1,0 +1,239 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.content{
+    display: block;
+    margin-top: 30px;
+}
+.addContent{
+    width: 1000px;
+    min-height: 450px;
+    background-color: rgb(208, 208, 209);
+    border-radius: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    border: solid 2px grey;
+    display: none;
+    margin-top: 30px;
+    display: none;
+    flex-flow: column nowrap;
+}
+.listInputs{
+    display: none;
+}
+.tableInputs{
+    display: none;
+    flex-flow: column nowrap;
+}
+.longInput{
+    width: 733px;
+}
+.longSelect{
+    width: 737px;
+    height: 37px;
+}
+.btnCreateTable, .btnCreateList{
+    color: white;
+    background-color: green;
+    border-radius: 5px;
+    border: none;
+    width: 85px;
+}
+.tableInputsItm{
+    margin-top: 10px;
+    width: 900px;
+    height: 35px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    line-height: 35px;
+}
+.choseAdd{
+    width: 900px;
+    height: 35px;
+    margin-left: auto;
+    margin-right: auto;
+}
+table {
+    border-collapse: collapse;
+}
+ul{
+    margin-left: 25px;
+}
+.block{
+    width: 1000px;
+    min-height: 400px;
+    background-color: rgb(208, 208, 209);
+    border-radius: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    border: solid 2px grey;
+}
+#previewContainer{
+    line-height: 30px;
+}
+.btnBlock{
+    margin-left: auto;
+    margin-right: auto;
+    height: 55px;
+    width: 125px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.btnEdit{
+    height: 40px;
+    width: 60px;
+    background-color: rgb(232, 152, 4);
+    border: solid 2px rgb(193, 109, 25);
+    border-radius: 5px;
+}
+.btnStyle{
+    height: 40px;
+    width: 60px;
+    background-color: rgb(4, 129, 232);
+    border: solid 2px rgb(25, 75, 193);
+    border-radius: 5px;
+    color: white;
+}
+.textAreaBlock{
+    width: 900px;
+    height: 350px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25px;
+    display: none;
+}
+.textAreaOne{
+    width: 900px;
+    height: 255px;
+}
+.btnAdd{
+    height: 40px;
+    width: 60px;
+    background-color: rgb(225, 31, 31);
+    border-radius: 5px;
+    border: none;
+    margin-top: 20px;
+}
+.btnSave{
+    height: 40px;
+    width: 60px;
+    background-color: green;
+    border-radius: 5px;
+    border: none;
+}
+.formBlock{
+    display: none;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    width: 900px;
+    height: 360px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+}
+.formBlockOne{
+    display: flex;
+    flex-flow: column nowrap;
+    height: 360px;
+    justify-content: space-around;
+}
+.formBlockTwo{
+    width: 320px;
+    height: 320px;
+    margin-left: auto;
+    display: flex;
+    flex-flow: row nowrap;
+}
+.btnRadio{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content:space-between;
+    align-items: center;
+    width: 350px;
+    height: 35px;
+}
+.FontFamily{
+    width: 300px;
+    height: 40px;
+}
+.btnTextColor{
+    height: 40px;
+    width: 100px;
+    background-color: rgb(130, 130, 130);
+    border: none;
+    border-radius: 5px;
+    color: white;
+}
+.btnBackColor{
+    height: 40px;
+    width: 120px;
+    background-color: rgb(130, 130, 130);
+    border: none;
+    border-radius: 5px;
+    color: white;
+}
+.chekBlock{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    width: 200px;
+}
+.blockColor {
+    width: 300px;
+    height: 300px;
+    display: none;
+    margin-left: auto;
+    margin-right: auto;
+    flex-flow: row wrap;
+}
+.blockBackColor {
+    width: 300px;
+    height: 300px;
+    display: none;
+    margin-left: auto;
+    margin-right: auto;
+    flex-flow: row wrap;
+}
+.blockItm{
+    width: 100px;
+    height: 100px;
+}
+.blockItmTwo{
+    width: 100px;
+    height: 100px;
+}
+
+
+.blue {
+    background-color: blue;
+}
+.brown {
+    background-color: brown;
+}
+.green {
+    background-color: green;
+}
+.lightgreen {
+    background-color: lightgreen;
+}
+.grey {
+    background-color: grey;
+}
+.orangered {
+    background-color: orangered;
+}
+.black{
+    background-color: black;
+}
+.burlywood{
+    background-color:burlywood;
+}
+.cornflowerblue{
+    background-color: cornflowerblue;
+}

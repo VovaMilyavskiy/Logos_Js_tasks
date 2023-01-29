@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="content">
+        <div class="block" id="previewContainer">
+            <p>Lorem ipsum dolor sit amet.</p>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+        <div class="btnBlock"> 
+            <button class="btnEdit">edit</button>
+            <button class="btnStyle">style</button>
+        </div>
+        <div class="block">
+            <div class="textAreaBlock">
+                <textarea class="textAreaOne" name="text" value=""></textarea>
+                <button class="btnAdd">add</button>
+                <button class="btnSave">save</button>
+            </div>
+            <div action="#" class="formBlock">
+                <div class="formBlockOne">
+                    <p>Font Size:</p>
+                    <form class="btnRadio">
+                        <input type="radio" name="fontSize" value="12px"><label>12px</label>
+                        <input type="radio" name="fontSize" value="14px"><label>14px</label>
+                        <input type="radio" name="fontSize" value="16px"><label>16px</label>
+                        <input type="radio" name="fontSize" value="18px"><label>18px</label>
+                        <input type="radio" name="fontSize" value="20px"><label>20px</label>
+                    </form>
+                    <p>Font Family:</p>
+                    <form name="main">
+                        <select name="fontFamily" id="" class="fontsFamily">
+                            <option value="">Choose option</option>
+                            <option value="cursive">cursive</option>
+                            <option value="fantasy">fantasy</option>
+                            <option value="monospase">monospase</option>
+                            <option value="sans-serif">sans-serif</option>
+                        </select>
+                    </form>
+                    <p>Colors:</p>
+                    <div>
+                        <button class="btnTextColor">Color of Text</button>
+                        <button class="btnBackColor">Background color</button>
+                    </div>
+                    <p>Style:</p>
+                    <div class="chekBlock">
+                        <p><input type="checkbox" onchange="boldChange(this)">Bold text</p>
+                        <p><input type="checkbox" onchange="cursiveChange(this)">Cursive text</p>
+                    </div>
+                </div>
+                <div class="formBlockTwo">
+                    <div class="blockColor" id="colors">
+                        <div class="blockItm blue"></div>
+                        <div class="blockItm brown"></div>
+                        <div class="blockItm green"></div>
+                        <div class="blockItm lightgreen"></div>
+                        <div class="blockItm grey"></div>
+                        <div class="blockItm orangered"></div>
+                        <div class="blockItm black"></div>
+                        <div class="blockItm burlywood"></div>
+                        <div class="blockItm cornflowerblue"></div>
+                    </div>
+                    <div class="blockBackColor" id="backColors">
+                        <div class="blockItmTwo blue"></div>
+                        <div class="blockItmTwo brown"></div>
+                        <div class="blockItmTwo green"></div>
+                        <div class="blockItmTwo lightgreen"></div>
+                        <div class="blockItmTwo grey"></div>
+                        <div class="blockItmTwo orangered"></div>
+                        <div class="blockItmTwo black"></div>
+                        <div class="blockItmTwo burlywood"></div>
+                        <div class="blockItmTwo cornflowerblue"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<div class="addContent">
+    <div class="tableInputsItm"><h1>Chose what you want:</h1></div>
+    <form action="#" class="choseAdd">
+        <input type="radio" name="chose" onclick="openTable()"><label>table</label>
+        <input type="radio" name="chose" onclick="openList()"><label>list</label>
+    </form>
+    <div class="tableInputs">
+        <div class="tableInputsItm">Count TR:<input class="longInput" id="trInput" type="text"></div>
+        <div class="tableInputsItm">Count TD:<input class="longInput" id="tdInput" type="text"></div>
+        <div class="tableInputsItm"><h1>Add style to your table:</h1></div>
+        <div class="tableInputsItm">Width of TD:<input class="longInput" id="widthTdInput" type="text"></div>
+        <div class="tableInputsItm">Height of TD:<input class="longInput" id="heightTdInput" type="text"></div>
+        <div class="tableInputsItm">Width of borde:<input type="text" id="widthBorder"> Type of border:
+        <select name="typeOfBorder" id="typeOfBorder">
+            <option value="solid">solid</option>
+            <option value="dashed">dashed</option>
+            <option value="ridge">ridge</option>
+        </select>
+        Color of border:
+        <select name="colorOfBorder" id="colorOfBorder">
+            <option value="black">black</option>
+            <option value="red">red</option>
+            <option value="blue">blue</option>
+            <option value="green">green</option>
+        </select>
+        </div>
+        <div class="tableInputsItm"><button class="btnCreateTable" onclick="createTable()">Create table</button></div>
+    </div>
+    <div class="listInputs">
+        <div class="tableInputsItm">Count Li:<input class="longInput" id="countLi" type="text"></div>
+        <div class="tableInputsItm">Type of marks:<select name="typeMarks" id="typeMarks" class="longSelect">
+            <option value="circle">circle</option>
+            <option value="disc">disc</option>
+            <option value="square">square</option>
+        </select></div>
+        <div class="tableInputsItm"><button class="btnCreateList" onclick="createList()">Create list</button></div>
+    </div>
+</div>
+    <script src="./script.js"></script>
+</body>
+</html>

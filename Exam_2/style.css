@@ -1,0 +1,720 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.content{
+    width: 100%;
+    min-width: 950px;
+    min-height: 1000px;
+    font-size: 25px;
+    padding-top: 15px;
+    text-indent: 20px;
+    background-size: cover;
+}
+header{
+    background-color: grey;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 950px;
+}
+.headBlock{
+    width: 950px;
+    height: 50px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+.fontBlock{
+    height: 50px;
+    width: 240px;
+    border-radius: 5px;
+    background-color: aliceblue;
+    display: flex;
+    flex-flow: row nowrap;
+}
+.fontMargBlock{
+    height: 50px;
+    width: 180px;
+    border-radius: 5px;
+    background-color: aliceblue;
+    display: flex;
+    flex-flow: row nowrap;
+}
+.html{
+    height: 50px;
+    width: 60px;
+    background-color: rgb(174, 175, 176);
+    border-radius: 5px;
+    background-image: url(./img/icons8-исходный-код-64.png);
+    background-size: 25px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.signInBlock{
+    height: 50px;
+    width: 60px;
+    background-color: aliceblue;
+    border-radius: 5px;
+}
+.fontBlock div{
+    height: 50px;
+    width: 60px;
+    background-size: 25px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.font div{
+    display: none;
+    font-size: 24px;
+    width: 200px;
+    height: 180px;
+    padding-top: 10px;
+    padding-left: 15px;
+    background-color: aliceblue;
+    position: relative;
+    top: 50px;
+    right: 150px;
+    border-radius: 5px;
+    border: solid 1px rgb(177, 177, 177);
+}
+.fontSize div{
+    display: none;
+    font-size: 24px;
+    width: 150px;
+    height: 230px;
+    padding-top: 10px;
+    padding-left: 15px;
+    background-color: aliceblue;
+    position: relative;
+    top: 50px;
+    right: 100px;
+    border-radius: 5px;
+    border: solid 1px rgb(177, 177, 177);
+}
+.fontSize div li{
+    margin-top: 5px;
+}
+.fontSize div ul{
+    list-style-type: none; 
+}
+.fontSelected ul{
+    list-style-type: none; 
+}
+ol{
+    margin-left: 45px;
+}
+.fontMargBlock div{
+    height: 50px;
+    width: 60px;
+    background-size: 25px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.boldFont{
+    background-image: url(./img/icons8-жирный-50.png);
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+.italicFont{
+    background-image: url(./img/icons8-курсив-30.png);
+}
+.underlinedFont{
+    background-image: url(./img/icons8-подчеркивание-30.png);
+}
+.crossedFont{
+    background-image: url(./img/icons8-зачеркивание-48.png);
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.leftMarg{
+    background-image: url(./img/icons8-выровнять-по-левому-краю-50.png);
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+.centerMarg{
+    background-image: url(./img/icons8-выровнять-по-центру-50.png);
+}
+.rightMarg{
+    background-image: url(./img/icons8-выровнять-по-правому-краю-30.png);
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.font{
+    background-image: url(./img/icons8-a-48.png);
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+.fontSize{
+    background-image: url(./img/icons8-высота-текста-24.png);
+}
+.fontColor{
+    background-image: url(./img/icons8-палитра-30.png);
+}
+.fontBack{
+    background-image: url(./img/icons8-изображение-целиком-30.png);
+}
+.signInBlock{
+    height: 50px;
+    width: 60px;
+    background-size: 25px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(./img/icons8-замок-24.png);
+}
+.arial{
+    font-family: Arial;
+}
+.georgia{
+    font-family: Georgia,;
+}
+.impact{
+    font-family: Impact;
+}
+.tahoma{
+    font-family: Tahoma;
+}
+.tmesNewRoman{
+    font-family: 'Times New Roman';
+}
+.verdana{
+    font-family: Verdana;
+}
+.fontSizeSel12{
+    font-size: 12px;
+}
+.fontSizeSel14{
+    font-size: 14px;
+}
+.fontSizeSel16{
+    font-size: 16px;
+}
+.fontSizeSel18{
+    font-size: 18px;
+}
+.fontSizeSel20{
+    font-size: 20px;
+}
+.fontSizeSel22{
+    font-size: 22px;
+}
+.fontSizeSel25{
+    font-size: 25px;
+}
+.fontSizeSel30{
+    font-size: 30px;
+}
+.colorSelected{
+    display: none;
+    position: absolute;
+    height: 440px;
+    width: 800px;
+    top: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: aliceblue;
+    border-radius: 5px;
+}
+.colorSelectedHead{
+    display: flex;
+    justify-content: space-between;
+    height: 70px;
+    align-items: center;
+    border-bottom: solid 3px rgb(222, 218, 218);
+}
+.colorSelectedHead h1{
+    margin-left: 25px;
+}
+.colorClose{
+    height: 30px;
+    width: 30px;
+    background-repeat: no-repeat;
+    background-image: url(./img/xmark-solid.svg);
+}
+.colorBlock{
+    height: 360px;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+.color{
+    border-radius: 5px;
+    width: 100px;
+    height: 100px;
+}
+.white{
+    background-color: white;
+}
+.black{
+    background-color: black;
+}
+.aqua{
+    background-color: aqua;
+}
+.navy{
+    background-color: navy;
+}
+.blue{
+    background-color: blue;
+}
+.brown{
+    background-color: brown;
+}
+.chartreuse{
+    background-color: chartreuse;
+}
+.crimson{
+    background-color: crimson;
+}
+.green{
+    background-color: green;
+}
+.red{
+    background-color: red;
+}
+.yellow{
+    background-color: yellow;
+}
+.orange{
+    background-color: orange;
+}
+.darkmagenta{
+    background-color: darkmagenta;
+}
+.yellowgreen{
+    background-color: yellowgreen;
+}
+.violet{
+    background-color: violet;
+}
+.turquoise{
+    background-color: turquoise;
+}
+.cornflowerblue{
+    background-color: cornflowerblue;
+}
+.indigo{
+    background-color: indigo;
+}
+.deeppink{
+    background-color: deeppink;
+}
+.dimgray{
+    background-color: dimgray;
+}
+.olivedrab{
+    background-color: olivedrab;
+}
+.backgroundcolorSelected{
+    display: none;
+    position: absolute;
+    min-height: 240px;
+    width: 800px;
+    top: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: aliceblue;
+    border-radius: 5px;
+}
+.backgroundcolorSelectedHead{
+    display: flex;
+    justify-content: space-between;
+    height: 70px;
+    align-items: center;
+    border-bottom: solid 3px rgb(222, 218, 218);
+}
+.backgroundChoice{
+    height: 55px;
+    display: flex;
+    flex-flow: row;
+}
+.backgroundChoice div{
+    font-size: 25px;
+    color: cornflowerblue;
+    height: 55px;
+    width: 80px;
+    line-height: 50px;
+    display: flex;
+    justify-content: center;
+}
+.backgroundcolorSelectedHead h1{
+    margin-left: 25px;
+}
+.backgroundcolorClose{
+    height: 30px;
+    width: 30px;
+    background-repeat: no-repeat;
+    background-image: url(./img/xmark-solid.svg);
+}
+.backgroundcolorBlock{
+    height: 360px;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-around;
+    align-items: center;
+    border-top: solid 3px rgb(222, 218, 218);
+}
+.backgroundColor{
+    border-radius: 5px;
+    width: 100px;
+    height: 100px;
+}
+.backgroundImages{
+    height: 360px;
+    display: none;
+    flex-flow: column wrap;
+    justify-content: space-around;
+    align-items: center;
+    border-top: solid 3px rgb(222, 218, 218);
+}
+.imag{
+    height: 100px;
+    width: 220px;
+    border-radius: 5px;
+    background-size: cover;
+}
+.imagOne{
+    background-image: url(./img/imgs/015332128.jpg);
+}
+.imagTwo{
+    background-image: url(./img/imgs/024542466.jpg)
+}
+.imagThree{
+    background-image: url(./img/imgs/1366x768-1.jpg)
+}
+.imagFour{
+    background-image: url(./img/imgs/1366x768.jpg)
+}
+.imagFive{
+    background-image: url(./img/imgs/212545431.jpg)
+}
+.imagSix{
+    background-image: url(./img/imgs/osennie-oboi-macbook-i-iphone-18.jpg)
+}
+.imagSeven{
+    background-image: url(./img/imgs/priroda-zelenye-pole-lug-oboi.jpg)
+}
+.imagEight{
+    background-image: url(./img/imgs/UOCC-East_Holy-Trinity-church-Gergeti-Georgia.png)
+}
+.imagNine{
+    background-image: url(./img/imgs/view4bbc6f317a192.jpg);
+}
+.backgroundFiles{
+    height: 130px;
+    display: none;
+    flex-flow: column wrap;
+    justify-content: space-around;
+    align-items: center;
+    border-top: solid 3px rgb(222, 218, 218);
+}
+.signIn{
+    display: none;
+    width: 100%;
+    height: 150%;
+    z-index: 1;
+    position: fixed;
+    left: 0;
+    top: 0;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+    animation-name: animatetop;
+    animation-duration: 0.5s
+}
+@keyframes animatetop {
+    from {top: -500px; opacity: 0}
+    to {top: 0; opacity: 1}
+}
+.signInContent{
+    margin: 90px auto;
+    background-color: white;
+    border: 1px solid #888;
+    width: 80%;
+    width: 850px;
+    min-height: 350px;
+    border-radius: 5px;
+}
+.signInContentOne{
+    width: 100%;
+    height: 95px;
+    border-bottom: solid 3px rgb(210, 210, 210);
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.signInContentTwo{
+    width: 100%;
+    min-height: 255px;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+.signInContentTwo input{
+    width: 88%;
+    height: 40px;
+    border-radius: 5px;
+    margin-top: 25px;
+    padding-left: 10px;
+}
+.signInContentTwo button{
+    width: 90%;
+    height: 40px;
+    border-radius: 5px;
+    margin-top: 25px;
+    border: solid 3px rgb(197, 197, 197);
+}
+.signInContentTwo span{
+    width: 90%;
+    color: red;
+}
+.signInContentSpanOne{
+    display: none;
+}
+.signInContentSpanTwo{
+    display: none;
+}
+.valid{
+    border:  solid rgb(197, 197, 197) 3px;
+}
+.invalid{
+    border:  solid red 3px;
+}
+.headBlockTwo{
+    height: 50px;
+    width: 240px;
+    border-radius: 5px;
+    background-color: aliceblue;
+    display: none;
+    flex-flow: row nowrap;
+}
+.headBlockTwo div{
+    height: 50px;
+    width: 60px;
+    background-size: 25px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.save{
+    background-image: url(./img/icons8-сохранить-24.png);
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+.createTable{
+    background-image: url(./img/icons8-formulae-table-with-row-and-column-cells-24.png);
+}
+.createOi{
+    background-image: url(./img/icons8-нумерованный-список-50.png);
+}
+.createUi{
+    background-image: url(./img/icons8-маркированный-список-50.png);
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.textArea{
+    display: none;
+    width: 100%;
+    height: 950px;
+    border: none;
+    font-size: 18px;
+}
+.createTableBlock{
+    display: none;
+    width: 100%;
+    height: 150%;
+    z-index: 1;
+    position: fixed;
+    left: 0;
+    top: 0;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+    animation-name: animatetop;
+    animation-duration: 0.5s
+}
+.createTableContent{
+    margin: 50px auto;
+    background-color: white;
+    border: 1px solid #888;
+    width: 950px;
+    min-height: 650px;
+    border-radius: 5px; 
+}
+.createTableContentHead{
+    width: 95%;
+    margin: auto;
+    height: 100px;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.createTableExit, .createOiExit, .createUiExit{
+    background-image: url(./img/xmark-solid.svg);
+    width: 25px;
+    height: 25px;
+    background-repeat: no-repeat;
+}
+.createTableForm{
+    min-height: 380px;
+    width: 100%;
+    border-top: solid 2px rgb(215, 215, 215);
+}
+.createOiBlock, .createUiBlock{
+    display: none;
+    width: 100%;
+    height: 150%;
+    z-index: 1;
+    position: fixed;
+    left: 0;
+    top: 0;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+    animation-name: animatetop;
+    animation-duration: 0.5s
+}
+.createOiContent, .createUiContent{
+    margin: 50px auto;
+    background-color: white;
+    border: 1px solid #888;
+    width: 750px;
+    min-height: 450px;
+    border-radius: 5px; 
+}
+.createOiContentHead, .createUiContentHead{
+    width: 95%;
+    margin: auto;
+    height: 100px;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.createOiForm, .createUiForm{
+    display: flex;
+    flex-flow: column nowrap;
+   
+    border-top: solid 2px rgb(210, 210, 210);
+    height: 350px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.btn{
+    width: 330px;
+    height: 50px;
+    border-radius: 5px;
+    border: none;
+    font-size: 19px;
+    color: white;
+}
+.createOiBtnRes, .createUiBtnRes, .createTableBtnRes{
+    background-color: rgb(251, 41, 41);
+}
+.createOiBtnCreate, .createUiBtnCreate, .createTableBtnCreate{
+    background-color: rgb(57, 143, 57);
+    margin-left: 45px;
+}
+.createInp, .createSelect{
+    height: 40px;
+    border-radius: 5px;
+    border: solid 2px rgb(185, 184, 184);
+    font-size: 18px;
+    padding-left: 10px;
+    margin-top: 15px;
+}
+.createOiForm span, .createUiForm span{
+    font-size: 20px;
+    margin-top: 25px;
+}
+.createOiForm div, .createUiForm div{
+    font-size: 20px;
+    margin-top: 45px;
+}
+
+.inp{
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    position: absolute;
+    z-index: -1;
+    overflow: hidden;
+}
+.inpLabel{
+    height: 40px;
+    width: 600px;
+    border: solid 2px rgb(186, 185, 185);
+    border-radius: 5px;
+    line-height: 40px;
+    padding-left: 10px;
+}
+.createTableForm{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+.createTableFormOne, .createTableFormTwo{
+    width: 45%;
+    height: 360px;
+    display: flex;
+    flex-flow: column nowrap;
+}
+.tableInputs{
+    height: 45px;
+    width: 400px;
+    border-radius: 5px;
+    border: solid 2px rgb(186, 185, 185);
+    margin-top: 5px;
+    padding-left: 10px;
+    font-size: 20px;
+}
+.createTableFormOne span{
+    margin-top: 40px;
+    font-size: 20px;
+}
+.createTableFormTwo span{
+    margin-top: 40px;
+    font-size: 20px;
+}
+.createTableFormThree{
+    display: flex;
+    flex-flow: row wrap;
+}
+.createTableFormThree span{
+    width: 50%;
+}
+.colorBorderSel, .styleBorderSel{
+    width: 45%;
+    height: 48px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: solid 2px rgb(186, 185, 185);
+    font-size: 20px;
+}
+.colorBorderSel{
+    margin-left: 18px;
+}
+.invalidValue{
+    display: none;
+    
+    padding-left: 55px;
+}
+.createTableBtnBlock{
+  margin-top: 25px;
+  margin-left: 110px;  
+}
+.error{
+    border-color: red;
+}
+.invalidValueOi, .invalidValueUl{
+    display: none;
+    color: rgb(254, 51, 51);
+    margin-top: 10px;
+}
+.content ul{
+    margin-left: 45px;
+}
+
